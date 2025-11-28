@@ -5,87 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graphic Design Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header Section -->
-  <header>
-    <div class="logo">
-      <img src="placeholder-logo.png" alt="Logo Placeholder">
-    </div>
-    <div class="bio">
-      <img src="placeholder-profile.jpg" alt="Profile Picture" class="profile-pic">
-      <h1>Your Name</h1>
-      <p>Short bio goes here. Describe your background, design philosophy, and what inspires your work.</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <div class="logo">
+        <img src="placeholder-logo.png" alt="Logo Placeholder">
+      </div>
+      <div class="bio">
+        <img src="placeholder-profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1 class="name">Your Name</h1>
+        <p class="tagline">Graphic Design Student | Visual Storyteller | Creative Thinker</p>
+        <p class="intro">I explore design through bold colors, typography, and storytelling. My portfolio reflects experimentation, curiosity, and a love for visual communication.</p>
+      </div>
     </div>
   </header>
 
   <!-- Portfolio Section -->
   <main>
     <section class="portfolio">
-      <h2>My Work</h2>
+      <h2>Selected Works</h2>
       <div class="gallery">
         <!-- 12 Artwork placeholders -->
         <div class="artwork">
           <img src="placeholder-art1.jpg" alt="Artwork 1">
-          <p>Description of artwork 1.</p>
+          <div class="caption">Poster design exploring geometric abstraction.</div>
         </div>
         <div class="artwork">
           <img src="placeholder-art2.jpg" alt="Artwork 2">
-          <p>Description of artwork 2.</p>
+          <div class="caption">Brand identity mockup for a coffee shop.</div>
         </div>
         <div class="artwork">
           <img src="placeholder-art3.jpg" alt="Artwork 3">
-          <p>Description of artwork 3.</p>
+          <div class="caption">Experimental typography project.</div>
         </div>
-        <div class="artwork">
-          <img src="placeholder-art4.jpg" alt="Artwork 4">
-          <p>Description of artwork 4.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art5.jpg" alt="Artwork 5">
-          <p>Description of artwork 5.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art6.jpg" alt="Artwork 6">
-          <p>Description of artwork 6.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art7.jpg" alt="Artwork 7">
-          <p>Description of artwork 7.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art8.jpg" alt="Artwork 8">
-          <p>Description of artwork 8.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art9.jpg" alt="Artwork 9">
-          <p>Description of artwork 9.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art10.jpg" alt="Artwork 10">
-          <p>Description of artwork 10.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art11.jpg" alt="Artwork 11">
-          <p>Description of artwork 11.</p>
-        </div>
-        <div class="artwork">
-          <img src="placeholder-art12.jpg" alt="Artwork 12">
-          <p>Description of artwork 12.</p>
-        </div>
+        <!-- Repeat until 12 -->
       </div>
     </section>
   </main>
 
   <!-- Contact Section -->
   <footer>
-    <h2>Contact Me</h2>
+    <h2>Let’s Collaborate</h2>
+    <p>Interested in working together or learning more? Drop me a message below.</p>
     <form id="contactForm">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
+    <p class="email-note">Messages will be sent to <strong>njmckissick@my.milligan.edu</strong></p>
   </footer>
 
   <script src="script.js"></script>
