@@ -25,23 +25,50 @@ body {
   border-radius: 10px;
 }
 
-.logo img {
-  max-width: 150px;
+/* Identity Row */
+.identity-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 1rem;
+  opacity: 0;                /* start hidden */
+  transform: translateY(-20px); /* slight upward offset */
+  animation: fadeSlideIn 1.2s ease forwards;
 }
 
+/* Keyframes for animation */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animations for each element */
 .profile-pic {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  border: 4px solid #fff;
-  margin: 1rem 0;
+  border: 3px solid #fff;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.2s;
 }
 
 .name {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.5s;
 }
+
+.logo {
+  max-width: 100px;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.8s;
+}
+
 
 .tagline {
   font-weight: 700;
