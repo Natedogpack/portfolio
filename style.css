@@ -1,85 +1,112 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  background: #fafafa;
   color: #333;
 }
 
-/* Header */
-header {
-  text-align: center;
+/* Hero Section */
+.hero {
+  background: url('placeholder-hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.6);
   padding: 2rem;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  text-align: center;
   color: white;
+  border-radius: 10px;
 }
 
 .logo img {
-  max-width: 120px;
+  max-width: 150px;
   margin-bottom: 1rem;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 4px solid #fff;
   margin: 1rem 0;
-  border: 3px solid white;
 }
 
-.bio h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
 }
 
-.bio p {
+.tagline {
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #ffcc00;
+}
+
+.intro {
   max-width: 600px;
   margin: auto;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Portfolio */
 .portfolio {
-  padding: 2rem;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 .portfolio h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.artwork {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.artwork:hover {
+  transform: scale(1.05);
 }
 
 .artwork img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
 }
 
-.artwork p {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+.caption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 /* Footer */
 footer {
-  background: #333;
+  background: #222;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 footer h2 {
+  font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
 }
 
@@ -97,15 +124,27 @@ form input, form textarea {
   border-radius: 5px;
 }
 
+form textarea {
+  min-height: 120px;
+}
+
 form button {
   padding: 0.8rem;
-  background: #2575fc;
-  color: white;
+  background: #ffcc00;
+  color: #222;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 form button:hover {
-  background: #6a11cb;
+  background: #ff9900;
 }
+
+.email-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
