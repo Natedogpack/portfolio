@@ -122,6 +122,13 @@ body {
   padding: 1rem;
   font-size: 0.95rem;
   color: #555;
+  font-weight: Bold;
+}
+
+.description {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 /* Footer */
