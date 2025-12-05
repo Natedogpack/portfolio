@@ -125,11 +125,21 @@ body {
   font-weight: Bold;
 }
 
-.description {
-  padding: 1rem;
-  font-size: 0.95rem;
-  color: #555;
+.caption {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #222;
 }
+
+.artwork .description {
+  font-size: 0.85rem;       /* smaller than caption */
+  color: #666;              /* lighter color for lower hierarchy */
+  margin-top: 4px;          /* space below caption */
+  margin-bottom: 6px;       /* small margin from bottom edge of box */
+  line-height: 1.4;
+}
+
 
 /* Footer */
 footer {
